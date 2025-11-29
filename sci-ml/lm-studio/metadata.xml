@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>chris.murtagh1@gmail.com</email>
+		<name>Chris Murtagh</name>
+	</maintainer>
+	<longdescription lang="en">
+		LM Studio is a desktop application for discovering, downloading, and running
+		large language models (LLMs) locally on your computer. It provides a user-friendly
+		interface for working with various open-source language models without requiring
+		cloud services or subscriptions.
+
+		Features include:
+		- Run popular LLMs locally (GPT-OSS, Qwen, Gemma, DeepSeek, and more)
+		- Private and offline operation - no data sent to the cloud
+		- Cross-platform support with native performance
+		- OpenAI-compatible API server for integration with existing tools
+		- Python and JavaScript SDKs for programmatic access
+		- Command-line interface (lms) for automation
+		- Model management and download capabilities
+		- Free for both personal and commercial use
+
+		The application is built on Electron and provides GPU acceleration support
+		for improved performance when running models. Models are downloaded on-demand
+		and stored locally in the user's home directory.
+	</longdescription>
+	<use>
+		<flag name="wayland">
+			Enable Wayland support (experimental). When enabled, provides better
+			integration with Wayland compositors, though X11/XWayland is still
+			supported as a fallback.
+		</flag>
+	</use>
+	<upstream>
+		<doc lang="en">https://lmstudio.ai/docs</doc>
+		<bugs-to>https://lmstudio.ai/support</bugs-to>
+	</upstream>
+</pkgmetadata>

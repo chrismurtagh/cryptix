@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LM Studio
+Comment=Discover, download, and run local LLMs
+GenericName=AI LLM Runtime
+Exec=lm-studio --no-sandbox %U
+Icon=lm-studio
+Type=Application
+StartupNotify=true
+StartupWMClass=lm-studio
+Categories=Development;Science;ArtificialIntelligence;
+Keywords=ai;llm;language;model;machine learning;ml;gpt;local;
+Terminal=false
