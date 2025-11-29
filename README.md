@@ -1,6 +1,6 @@
 # Cryptix Gentoo Overlay
 
-A Gentoo portage overlay for custom and third-party packages.
+A Gentoo portage overlay for AI and ML enabled packages.
 
 ## Overview
 
