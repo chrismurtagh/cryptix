@@ -48,7 +48,7 @@ sudo emerge --sync cryptix
 
 ## Package Details
 
-### antigravity
+### app-editors/antigravity
 
 Antigravity is distributed as a pre-built binary package. The ebuild:
 
@@ -62,6 +62,40 @@ Antigravity is distributed as a pre-built binary package. The ebuild:
 - x86_64 architecture
 - GTK+ 3.x
 - Network Security Services (NSS)
+- X11 libraries
+
+### app-editors/cursor
+
+Cursor is distributed as a pre-built binary package (repackaged from .deb). The ebuild:
+
+- Downloads the official .deb package
+- Extracts to `/opt/cursor`
+- Installs a symlink to `/usr/bin/cursor`
+- Adds a desktop entry for application menus
+- Handles all required dependencies for the Electron/VSCode runtime
+- Fixes permissions for bundled Node.js binaries to ensure AI features work
+
+**System Requirements:**
+- x86_64 architecture
+- GTK+ 3.x
+- Network Security Services (NSS)
+- X11 libraries (libX11, libxcb, etc.)
+
+### sci-ml/lm-studio
+
+LM Studio is distributed as an AppImage which is extracted during installation. The ebuild:
+
+- Downloads the official AppImage
+- Extracts contents to `/opt/lm-studio`
+- Installs a symlink to `/usr/bin/lm-studio`
+- Adds a desktop entry for application menus
+- Sets proper permissions for the chrome-sandbox and other executables
+
+**System Requirements:**
+- x86_64 architecture
+- GTK+ 3.x
+- FUSE (for AppImage compatibility)
+- OpenGL support (mesa)
 - X11 libraries
 
 
