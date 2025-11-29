@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>chris.murtagh1@gmail.com</email>
+		<name>Chris Murtagh</name>
+	</maintainer>
+	<longdescription lang="en">
+		Warp is a modern, AI-native terminal emulator built in Rust for speed and
+		responsiveness. It reimagines the terminal experience with a block-based UI,
+		IDE-like editing capabilities, and integrated AI features.
+
+		Key features include:
+		- AI command suggestions and natural language command generation
+		- Block-based UI that organizes command output into discrete blocks
+		- IDE-style editing with autocomplete and smart suggestions
+		- Command palette inspired by modern code editors
+		- Shared terminal sessions for real-time collaboration
+		- Warp Drive for saving and sharing workflows and notebooks
+		- Custom themes and prompts
+		- Native Linux support with seamless Bash/Zsh integration
+
+		This package installs the official binary distribution from Warp.
+	</longdescription>
+	<use>
+		<flag name="wayland">
+			Enable Wayland support (experimental). When enabled, provides better
+			integration with Wayland compositors, though X11/XWayland is still
+			supported as a fallback.
+		</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">warpdotdev/warp</remote-id>
+		<doc lang="en">https://docs.warp.dev</doc>
+		<bugs-to>https://github.com/warpdotdev/warp/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
